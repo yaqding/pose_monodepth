@@ -43,7 +43,7 @@ solver_essential_matrix_mono_suv_GB  - Gröbner basis solution. - ${\rm 3PT}\_{s
 solver_essential_matrix_mono_suv_Eigen - polynomial eigenvalue solution. - ${\rm 3PT}\_{suv}$ (Eigen) <br />
 solver_essential_matrix_mono_suv_inverse - inverse depth model (not practical). - ${\rm 3PT}\_{suv}$ (inverse) <br />
 
-| Solver           | G-J | Eigen | Poly | Time($\mu$s) |
+| Solver           | G-J | Eigen | Poly | Time($\mu s$) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
 | ${\rm 3PT}_{suv}$ (GB)       | $12\times 16$ |  $4\times 4$ | - | 4.45 | 
 | ${\rm 3PT}_{suv}$ (Eigen)      | $6\times 10$ |  $4\times 4$ | - | 3.42 | 
@@ -54,7 +54,7 @@ Equal and unknown focal length: <br />
 solver_fundamental_matrix_mono_suvf_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f$ (GB) <br />
 solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f$ (Eigen) <br />
 
-| Solver           | G-J | Eigen | Poly | Time($\mu$s) |
+| Solver           | G-J | Eigen | Poly | Time($\mu s$) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
 | ${\rm 4PT}_{suv}f$ (GB)       | $24\times 32$ |  $8\times 8$ | - | 12.5 | 
 | ${\rm 4PT}_{suv}f$ (Eigen)      | $6\times 8$ |  $2\times 2$ | - | 2.38 | 
@@ -63,7 +63,7 @@ Varying focal lengths: <br />
 solver_fundamental_matrix_mono_suvfvar_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f_{1,2}$ (GB) <br />
 solver_fundamental_matrix_mono_suvfvar_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f_{1,2}$ (Eigen) <br />
 
-| Solver           | G-J | Eigen | Poly | Time($\mu$s) |
+| Solver           | G-J | Eigen | Poly | Time($\mu s$) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
 | ${\rm 4PT}\_{suv}f_{1,2}$ (GB)       | $20\times 24$ |  $4\times 4$ | - | 6.45 | 
 | ${\rm 4PT}\_{suv}f_{1,2}$ (Eigen)      | $6\times 8$ |  $2\times 2$ | - | 2.49 | 
