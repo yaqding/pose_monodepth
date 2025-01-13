@@ -30,14 +30,14 @@ More details come soon.
 :file_folder: ``graph-cut-ransac/src/pygcransac/include/estimators``: contains the code of all the solvers. 
 ### Fundamental matrix estimation using relative depth with unknown relative scale:
 
-solver_fundamental_matrix_4p4d - general fundamental matrix estimation
-solver_fundamental_matrix_4p3d - varying focal lengths problem
-solver_fundamental_matrix_3p3d - equal and unknown focal length
+solver_fundamental_matrix_4p4d - general fundamental matrix estimation <br />
+solver_fundamental_matrix_4p3d - varying focal lengths problem <br />
+solver_fundamental_matrix_3p3d - equal and unknown focal length <br />
 
 
 ### Camera pose estimation using monocular depth modeling scale and shift:
 
-Calibrated case:
+Calibrated case: <br />
 solver_essential_matrix_mono_suv - closed-form solution, fastest. - ${\rm 3PT}\_{suv}$ (C) <br />
 solver_essential_matrix_mono_suv_GB  - Gröbner basis solution. - ${\rm 3PT}\_{suv}$ (GB) <br />
 solver_essential_matrix_mono_suv_Eigen - polynomial eigenvalue solution. - ${\rm 3PT}\_{suv}$ (Eigen) <br />
@@ -50,7 +50,7 @@ solver_essential_matrix_mono_suv_inverse - inverse depth model (not practical). 
 | ${\rm 3PT}_{suv}$ (C)       | $3\times 6$ |  - | 4 | 1.46 | 
 | ${\rm 3PT}_{suv}$ (inverse)        |  $54\times 66$ |  $12\times 12$ | - | 36.9 | 
 
-Equal and unknown focal length:
+Equal and unknown focal length: <br />
 solver_fundamental_matrix_mono_suvf_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f$ (GB) <br />
 solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f$ (Eigen) <br />
 
@@ -59,7 +59,7 @@ solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${
 | ${\rm 4PT}_{suv}f$ (GB)       | $24\times 32$ |  $8\times 8$ | - | 12.5 | 
 | ${\rm 4PT}_{suv}f$ (Eigen)      | $6\times 8$ |  $2\times 2$ | - | 2.38 | 
 
-Varying focal lengths:
+Varying focal lengths: <br />
 solver_fundamental_matrix_mono_suvfvar_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f_{1,2}$ (GB) <br />
 solver_fundamental_matrix_mono_suvfvar_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f_{1,2}$ (Eigen) <br />
 
