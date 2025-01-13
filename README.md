@@ -38,10 +38,10 @@ solver_fundamental_matrix_3p3d - equal and unknown focal length
 ### Camera pose estimation using monocular depth modeling scale and shift:
 
 Calibrated case:
-solver_essential_matrix_mono_suv - closed-form solution, fastest. - ${\rm 3PT}_{suv}$(C)
-solver_essential_matrix_mono_suv_GB  - Gröbner basis solution. - ${\rm 3PT}_{suv}$(GB)
-solver_essential_matrix_mono_suv_Eigen - polynomial eigenvalue solution. - ${\rm 3PT}_{suv}$(Eigen)
-solver_essential_matrix_mono_suv_inverse - inverse depth model (not practical). - ${\rm 3PT}_{suv}$(inverse) 
+solver_essential_matrix_mono_suv - closed-form solution, fastest. - ${\rm 3PT}\_{suv}$(C)
+solver_essential_matrix_mono_suv_GB  - Gröbner basis solution. - ${\rm 3PT}\_{suv}$(GB)
+solver_essential_matrix_mono_suv_Eigen - polynomial eigenvalue solution. - ${\rm 3PT}\_{suv}$(Eigen)
+solver_essential_matrix_mono_suv_inverse - inverse depth model (not practical). - ${\rm 3PT}\_{suv}$(inverse) 
 
 | Solver           | G-J | Eigen | Poly | Time($\mu$s) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
@@ -51,8 +51,8 @@ solver_essential_matrix_mono_suv_inverse - inverse depth model (not practical). 
 | ${\rm 3PT}_{suv}$(inverse)        |  $54\times 66$ |  $12\times 12$ | - | 36.9 | 
 
 Equal and unknown focal length:
-solver_fundamental_matrix_mono_suvf_GB  - Gröbner basis solution. - ${\rm 4PT}_{suv}f$(GB)
-solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}_{suv}f$(Eigen)
+solver_fundamental_matrix_mono_suvf_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f$(GB)
+solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f$(Eigen)
 
 | Solver           | G-J | Eigen | Poly | Time($\mu$s) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
@@ -60,8 +60,8 @@ solver_fundamental_matrix_mono_suvf_Eigen - polynomial eigenvalue solution. - ${
 | ${\rm 4PT}_{suv}f$(Eigen)      | $6\times 8$ |  $2\times 2$ | - | 2.38 | 
 
 Varying focal lengths:
-solver_fundamental_matrix_mono_suvfvar_GB  - Gröbner basis solution. - ${\rm 4PT}_{suv}f_{1,2}$(GB)
-solver_fundamental_matrix_mono_suvfvar_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}_{suv}f_{1,2}$(Eigen)
+solver_fundamental_matrix_mono_suvfvar_GB  - Gröbner basis solution. - ${\rm 4PT}\_{suv}f_{1,2}$(GB)
+solver_fundamental_matrix_mono_suvfvar_Eigen - polynomial eigenvalue solution. - ${\rm 4PT}\_{suv}f_{1,2}$(Eigen)
 
 | Solver           | G-J | Eigen | Poly | Time($\mu$s) |
 | :---------------: | :------: | :----: | :-------: | :-------: | 
