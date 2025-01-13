@@ -3,7 +3,7 @@
 ## Introduction
 This repository hosts the solvers of the paper: <br />
 "Fundamental Matrix Estimation Using Relative Depths" ECCV 2024. [[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08966.pdf)][[Supp](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08966-supp.pdf)] <br />
-"Fixing the Scale and Shift in Monocular Depth For Camera Pose Estimation" Arxiv 2025. [[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08966.pdf)] <br />
+"Fixing the Scale and Shift in Monocular Depth For Camera Pose Estimation" Arxiv 2025.  <br />
 We used [[graph-cut ransac](https://github.com/danini/graph-cut-ransac)] for robust estimation. The evaluation script is based on [[homography-benchmark](https://github.com/danini/homography-benchmark)] <br />
 
 ## Installation
