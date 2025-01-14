@@ -16,15 +16,17 @@ python -m pip install .
 cd ..
 pip install -r requirements.txt
 ```
+
+## Data
+An example data can be downloaded [[here](https://drive.google.com/file/d/13ZRI8D5gxLi37xbjH0lNJ3tk6QWr0MuA/view?usp=drive_link)] <br />
+More details come soon.
+
 Run the test code by specifically typing the scene, solver and depth name, _e.g._,
 ```bash
 python test_calibrated.py --path 'pathtodata' --scene 'british_museum' --solver 'mono' --depth 'unidepth'
 ```
 which solves the calibrated relative pose problem using 3 points with their monodepths.
 
-## Data
-An example data can be downloaded [[here](https://drive.google.com/file/d/13ZRI8D5gxLi37xbjH0lNJ3tk6QWr0MuA/view?usp=drive_link)] <br />
-More details come soon.
 
 ## Solvers in this repo
 :file_folder: ``graph-cut-ransac/src/pygcransac/include/estimators``: contains the code of all the solvers. 

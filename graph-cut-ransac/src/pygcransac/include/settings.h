@@ -64,8 +64,8 @@ namespace gcransac
 				spatial_coherence_weight; // The weight of the spatial coherence term
 
 			Settings() :
-				do_final_iterated_least_squares(false),
-				do_local_optimization(false),
+				do_final_iterated_least_squares(true),
+				do_local_optimization(true),
 				do_graph_cut(true),
 				use_inlier_limit(false),
 				desired_fps(-1),

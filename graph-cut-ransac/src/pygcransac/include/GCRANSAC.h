@@ -555,7 +555,7 @@ namespace gcransac
 				temp_inner_inliers[inlier_container_offset]); // The current inliers
 
 		// Apply iteration least-squares fitting to get the final model parameters if needed
-		bool iterative_refitting_applied = true;
+		bool iterative_refitting_applied = false;
 		if (settings.do_final_iterated_least_squares)
 		{
 			Model model = so_far_the_best_model; // The model which is re-estimated by iteratively re-weighted least-squares
