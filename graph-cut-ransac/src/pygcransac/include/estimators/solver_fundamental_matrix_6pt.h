@@ -1,4 +1,4 @@
-// Copyright (C) 2019 Czech Technical University.
+// Copyright (C) 2025 Czech Technical University.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -29,8 +29,9 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 //
-// Please contact the author of this library if you have any questions.
-// Author: Daniel Barath (barath.daniel@sztaki.mta.hu)
+// 6-point equal focal length solver based on
+// Z Kukelova, J Kileel, B Sturmfels, T Pajdla. A clever elimination strategy for efficient minimal solvers. cvpr 2017.
+// elimination template 21x36
 #pragma once
 
 #include "solver_engine.h"

@@ -1,4 +1,4 @@
-// Copyright (C) 2025 Czech Technical University.
+// Copyright (C) 2025 Yaqing Ding.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
