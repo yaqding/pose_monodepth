@@ -9,7 +9,8 @@ We used [[graph-cut ransac](https://github.com/danini/graph-cut-ransac)] for rob
 ## Installation
 Install in Conda environment 
 ```bash
-conda conda create -n posemono python=3.9
+git clone https://github.com/yaqding/pose_monodepth.git
+conda create -n posemono python=3.9
 conda activate posemono
 cd graph-cut-ransac
 python -m pip install .
