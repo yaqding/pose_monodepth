@@ -293,7 +293,7 @@ namespace gcransac
 					}
 				}
 
-				return true;
+				return models_.size();
 			}
 		}
 	}

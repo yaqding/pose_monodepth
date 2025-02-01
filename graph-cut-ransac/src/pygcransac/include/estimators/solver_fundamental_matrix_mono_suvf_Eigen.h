@@ -1,4 +1,4 @@
-// Copyright (c) 2025, Yaqing Ding
+// Copyright (c) 2025, Yaqing Ding.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -222,7 +222,6 @@ namespace gcransac
 
 				sols.conservativeResize(4, m);
 
-				int step = 0;
 				for (size_t k = 0; k < m; ++k)
 				{
 
@@ -262,11 +261,11 @@ namespace gcransac
 					F1 = Kinv * TX * rot * Kinv;
 
 					FundamentalMatrix model;
-					model.descriptor = F1 / F1(2, 2) * f;
+					model.descriptor = F1;
 					models_.push_back(model);
 				}
 
-				return true;
+				return models_.size();
 			}
 		}
 	}

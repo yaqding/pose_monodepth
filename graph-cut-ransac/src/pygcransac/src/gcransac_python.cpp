@@ -1402,8 +1402,6 @@ int findFundamentalMatrixPT6_(
 	}
 
 
-	const double focal = model.descriptor(2,2);
-
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	const size_t &inlier_number = statistics.inliers.size();
 	if (statistics.inliers.size() > 7)
@@ -1482,11 +1480,6 @@ int findFundamentalMatrixPT6_(
 		}
 	}
 
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
 	// This causes a memory leaking. I hate C++.
@@ -2314,7 +2307,6 @@ int findFundamentalMatrixSIFT3_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
 
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
@@ -2380,11 +2372,6 @@ int findFundamentalMatrixSIFT3_(
 		}
 	}
 
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
@@ -3213,8 +3200,6 @@ int findFundamentalMatrixPT3D3_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
-
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
 	{
@@ -3278,12 +3263,6 @@ int findFundamentalMatrixPT3D3_(
 			fundamental_matrix[i * 3 + j] = (double)model.descriptor(i, j);
 		}
 	}
-
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
@@ -3520,8 +3499,6 @@ int findFundamentalMatrixMonoEqualGB_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
-
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
 	{
@@ -3586,11 +3563,6 @@ int findFundamentalMatrixMonoEqualGB_(
 		}
 	}
 
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
@@ -3827,8 +3799,6 @@ int findFundamentalMatrixMonoVarGB_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
-
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
 	{
@@ -3892,12 +3862,6 @@ int findFundamentalMatrixMonoVarGB_(
 			fundamental_matrix[i * 3 + j] = (double)model.descriptor(i, j);
 		}
 	}
-
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
@@ -4134,8 +4098,6 @@ int findFundamentalMatrixMonoEqualEigen_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
-
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
 	{
@@ -4199,12 +4161,6 @@ int findFundamentalMatrixMonoEqualEigen_(
 			fundamental_matrix[i * 3 + j] = (double)model.descriptor(i, j);
 		}
 	}
-
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 
@@ -4441,7 +4397,6 @@ int findFundamentalMatrixMonoVarEigen_(
 		statistics = gcransac.getRansacStatistics();
 	}
 
-	const double focal = model.descriptor(2,2);
 
 	// Running bundle adjustment minimizing the pose error on the found inliers
 	if (statistics.inliers.size() > 7)
@@ -4506,12 +4461,6 @@ int findFundamentalMatrixMonoVarEigen_(
 			fundamental_matrix[i * 3 + j] = (double)model.descriptor(i, j);
 		}
 	}
-
-	for (int i = 0; i < 8; i++) {
-			fundamental_matrix[i] = fundamental_matrix[i]/fundamental_matrix[8]*focal;
-	}
-
-	fundamental_matrix[8] = focal;
 
 	// It is ugly: the unique_ptr does not check for virtual descructors in the base class.
 	// Therefore, the derived class's objects are not deleted automatically. 

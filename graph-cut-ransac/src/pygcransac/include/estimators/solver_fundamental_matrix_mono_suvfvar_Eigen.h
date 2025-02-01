@@ -1,4 +1,4 @@
-// Copyright (c) 2025, Yaqing Ding
+// Copyright (c) 2025, Yaqing Ding.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -269,7 +269,7 @@ namespace gcransac
 					models_.push_back(model);
 				}
 
-				return true;
+				return models_.size();
 			}
 		}
 	}

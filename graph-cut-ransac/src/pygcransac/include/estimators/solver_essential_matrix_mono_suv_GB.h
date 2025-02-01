@@ -218,7 +218,7 @@ namespace gcransac
 					models_.push_back(model);
 				}
 
-				return true;
+				return models_.size();
 			}
 		}
 	}

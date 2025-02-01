@@ -1,4 +1,4 @@
-// Copyright (C) 2025 Czech Technical University.
+// Copyright (c) 2025, Yaqing Ding.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -220,7 +220,7 @@ namespace gcransac
 
 					}
 				}
-				return true;
+				return models_.size();
 
 
 			}
