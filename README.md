@@ -1,5 +1,7 @@
 # Fixing the Scale and Shift in Monocular Depth For Camera Pose Estimation
 
+## This version is outdated, please refer to our latest release [[Project Page](https://kocurvik.github.io/reposed/)], which provides significantly improved results.
+
 ## Introduction
 This repository hosts the solvers of the paper: <br />
 "Fundamental Matrix Estimation Using Relative Depths" ECCV 2024. [[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08966.pdf)][[Supp](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08966-supp.pdf)] <br />
